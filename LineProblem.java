@@ -1,6 +1,8 @@
-//As a fan of geometry, I want to compare two lines based on the end points, So that I know one line is equal, greater or less than the other line. - Using Java compareTo method to compare 2 Lengths
+
 
 package com.bridgelabz;
+import java.lang.Math;
+
 import java.lang.Math;
 
 public class LineProblem {
