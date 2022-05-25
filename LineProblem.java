@@ -1,5 +1,4 @@
-//As a fan of geometry, I want to check equality of two lines based on the end points,
-// So that I know when two lines are the equal. - Using Java equals
+
 
 package com.bridgelabz;
 import java.lang.Math;
@@ -17,9 +16,21 @@ public class LineProblem {
         System.out.println(a + " " + b);
 
         Double d1 = Double.valueOf(a);
+
         Double d2 = Double.valueOf(b);
 
         System.out.println("Are the Lengths equal : "+ d1.equals(d2));
 
+        int check = d1.compareTo(d2);
+        switch (check){
+            case 1 :
+                System.out.println("Line 1 is greater than Line 2");
+                break;
+            case -1 :
+                System.out.println("Line 1 is smaller than Line 2");
+                break;
+            default :
+                System.out.println("Both Lines are equal");
+        }
     }
 }
